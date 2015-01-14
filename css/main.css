@@ -1,0 +1,16 @@
+.header {
+  margin-top: 200px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.header img {
+  width: 50%;
+  max-width: 250px;
+}
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 600px;
+}
