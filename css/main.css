@@ -1,10 +1,21 @@
 .header {
-  margin-top: 200px;
+  margin-top: 40px;
   margin-bottom: 40px;
   text-align: center;
 }
 
 .header img {
+  width: 50%;
+  max-width: 250px;
+}
+
+.splash {
+  margin-top: 200px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.splash img {
   width: 50%;
   max-width: 250px;
 }
