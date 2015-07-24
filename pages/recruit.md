@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: text
 title: ELiT
+permalink: /recruit/
+level: nested
 ---
 We are looking for a strong Rails and/or Clojure developer to join our small team.
 

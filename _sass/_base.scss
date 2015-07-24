@@ -1,0 +1,214 @@
+// Clearfix
+%clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+.clearfix
+{
+  @extend %clearfix;
+}
+
+.visuallyhidden { 
+  position: absolute; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height: 1px; width: 1px; 
+  margin: -1px; padding: 0; border: 0; 
+}
+
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.center{
+  margin: 0 auto;
+}
+
+a{
+  color: #682c91;
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+blockquote{
+  color: #682c91;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+  background: url("/images/pull-quote.png") no-repeat left top;
+  line-height: 1.4;
+  padding-left: 36px;
+  p{
+    margin: 5px
+  }
+  cite{
+    color: #6e6c6c;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    strong
+    {
+      color: black;
+    }
+  }
+}
+
+body, html{
+  margin: 0;
+  padding: 0;
+  background-color: #e0dcd7;
+  font-family: 'Lola', sans-serif;
+  font-weight: 600;
+  overflow-x: hidden;
+}
+body.below-header{
+  .site-header-container{
+    position: static;
+    @include media-query($on-desktop)
+    {
+      .site-nav .page-link{
+        color: #4a4949;
+        border-color: rgba(54, 17, 99, 0.2) ;
+        .subnav
+        {
+          color: #615f5f;
+        }
+      }
+    }
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.row
+{
+  padding: 0 11px;
+  @include media-query($on-desktop){
+    max-width: 915px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+.noscroll, .noscroll body{
+  overflow: hidden;
+  position: fixed;
+}
+.toggle-nav{
+  cursor: pointer;
+  @include media-query($on-desktop){
+    cursor: default;
+  }
+}
+
+.narrow-width{
+  max-width: 560px;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+@include media-query($on-mobile)
+{
+  //on mobile lets strtch borders and colours right to the edge of the screen.
+  .mobile-stretch
+  {
+    margin-left: -11px;
+    padding-left: 11px;
+    margin-right: -11px;
+    padding-right: 11px;
+  }
+}
+.page-title{
+  font-size: 28px;
+  text-align: center;
+  overflow: hidden;
+  color: #682c91;
+  font-weight: bold;
+  margin-top: 0;
+  span{
+    position: relative;
+    display: inline-block;
+    padding: 0 28px;
+    @include media-query($on-desktop)
+    {
+      padding: 0 36px;
+    }
+    &:before, &:after{
+      content: "";
+      border-bottom: 2px solid rgba(200, 200, 200, 0.6);
+      height: 5px;
+      position: absolute;
+      top: 25%;
+      width: 10000%;
+    }
+    &:before{
+      right: 100%;
+    }
+    &:after{
+      left: 100%;
+    }
+  }
+}
+
+.btn{
+  display: inline-block;
+  text-align: center;
+  padding: 15px 40px;
+  border: 1px solid #8e8e8e;
+  color: #393839;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: 0.2s ease;
+  font-weight: normal;
+  &:hover{
+    color: rgb(224, 220, 215);
+    background-color: #8e8e8e;
+    text-decoration: none;
+  }
+}
+
+ul{
+  list-style-image: url('/images/list-speech-bubble.png');
+}
+
+.site-footer{
+  font-size: 14px;
+  padding: 20px;
+  text-align: center;
+  color: #232222;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  box-sizing: border-box;
+  margin-bottom: 35px;
+  .sitemap{
+    color: #6f6f6f;
+    margin: 10px 0 30px 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1.5em;
+    li{
+      display: inline;
+      padding: 0 10px;
+      color: #333333;
+      border-right: 1px solid #333333;
+      &:nth-last-child(1){
+        border: none;
+      }
+    }
+    a{
+      color: inherit;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}

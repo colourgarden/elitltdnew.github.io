@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    {% if page.hero %}
+      <div class="hero-overlay-container"><div class="row"><div class="hero-overlay">{{ page.hero.text | markdownify}} </div></div></div>
+      <div class="hero" >
+        {% if page.hero.image %}
+          <img id="hero-image" src="{{ page.hero.image }}" alt="{{page.hero.alt}}">
+        {% endif %}
+      </div>
+    {% endif %}
+    <div class="teaser-belt row">
+      <div class="teaser" id="key_features">
+        <h2>Key features:</h2>
+        {{ page.key-features | markdownify }}
+        <p class="teaser-button-container"><a href="{{ page.key-features-link }}" class="btn">Learn more</a></p>
+      </div>
+      <div class="teaser" id="our_products">
+        <h2>Our products:</h2>
+        <ul>
+        {% for product in site.data.products %}
+          <a href="{{product.link}}" class="clearfix">
+            <li>
+              <h3>{{product.name}}</h3>
+              <p>{{product.content}}</p>
+            </li>
+          </a>
+        {% endfor %}
+        </ul>
+        <p class="teaser-button-container"><a href="{{ page.our-products-link }}" class="btn">Learn more</a></p>
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

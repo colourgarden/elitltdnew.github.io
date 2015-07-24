@@ -1,0 +1,20 @@
+/**
+* This file is for hacks and tweaks that don't belong elsewhere,
+* Ideally this file should be empty, and code in this file should eventually be refactored
+*/
+.founder:last-child
+{
+  border-bottom:none!important;
+}
+@include media-query($on-desktop)
+{
+  .founder:nth-child(3n + 1):last-child, 
+  .founder:nth-child(3n + 1):nth-last-child(2), 
+  .founder:nth-child(3n + 2):last-child,
+  .founder:nth-child(3n + 1):nth-last-child(3), 
+  .founder:nth-child(3n + 2):nth-last-child(2),
+  .founder:nth-child(3n + 3):last-child
+  {
+    border-bottom:none!important;
+  }
+}

@@ -1,4 +1,6 @@
-name: English Language iTutoring
+# Default Meta Description
+description: "ELiT English Language iTutoring"
+
+# Markdown settings
 markdown: redcarpet
 highligher: pygments
-description: English Language iTutoring

@@ -1,0 +1,120 @@
+/*.product-intro-image
+ * width: 660px
+ * margin: 0 auto
+ * display: block */
+.product-intro-image-max-width {
+  max-width: 823px;
+  margin: 0 auto;
+  margin-left: -10%;
+  margin-right: -10%;
+  @include media-query($on-desktop) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.product-image-container {
+  margin: 0 auto;
+  position: relative;
+  max-width: 100%;
+  height: 0;
+}
+
+.product-image-screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  z-index: 2;
+}
+
+.product-image-upload {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.product-intro-image-container {
+  padding-bottom: 75.5%;
+}
+
+.product-intro-image-screen {
+  background-image: url(/images/screen.png);
+}
+
+.product-intro-image-upload {
+  width: 74%;
+  top: 4%;
+}
+
+.product-section {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid white;
+  &:last-of-type {
+    border-bottom: none;
+  }
+  @extend %clearfix;
+  .section-image {
+    img {
+      max-width: 100%;
+    }
+  }
+  .section-image, .section-content {
+    box-sizing: border-box;
+  }
+  .section-content, .section-image {
+    width: 100%;
+    float: none;
+  }
+  &.combined-image-right {
+    .product-image-container {
+      padding-bottom: 133%;
+    }
+    .product-image-screen {
+      background-image: url(/images/tablet-portrait.png);
+    }
+    .product-image-upload {
+      width: 88%;
+      top: 4%;
+    }
+  }
+  &.combined-image-left {
+    .product-image-container {
+      padding-bottom: 75.5%;
+    }
+    .product-image-screen {
+      background-image: url(/images/tablet-landscape.png);
+    }
+    .product-image-upload {
+      width: 86%;
+      top: 8%;
+    }
+  }
+  @include media-query($on-desktop) {
+    &.combined-image-right {
+      .section-content {
+        width: 48%;
+        padding-left: 12%;
+        float: left;
+      }
+      .section-image {
+        float: right;
+        text-align: right;
+        width: 41%;
+      }
+    }
+    &.combined-image-left {
+      .section-content {
+        width: 40%;
+        padding-right: 1%;
+        float: right;
+      }
+      .section-image {
+        float: left;
+        width: 53%;
+      }
+    }
+  }
+}

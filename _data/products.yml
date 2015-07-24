@@ -1,0 +1,12 @@
+#Products available
+- name: 'Write & Improve'
+  content: 'Improve your fermentum, nulla luctus pharetra'
+  link: '/products/write-and-improve'
+
+- name: 'Speak & Improve'
+  content: 'Develop your fermentum, nulla luctus pharetra'
+  link: '/products/speak-and-improve'
+
+- name: 'API'
+  content: 'Link directly to our fermentum, nulla luctus pharetra'
+  link: '/products/api'

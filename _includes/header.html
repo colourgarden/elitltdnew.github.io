@@ -1,0 +1,38 @@
+<header class="site-header-container">
+  <div class="row clearfix site-header">
+    {% if page.layout == 'index' %} <h1 class="site-logo-h1"> {% endif %}
+    <a class="site-logo" href="{{ site.data.general.baseurl }}/">
+      <span class="visuallyhidden">ELiT English Language iTutoring</span>
+      <img src="{{ site.data.general.logo }}" alt="{{ site.data.general.name }}" />
+    </a>
+    {% if page.layout == 'index' %} </h1> {% endif %}
+    <span class="nav-trigger toggle-nav right">Menu</span>
+    <nav class="site-nav toggle-nav">
+    	<div class="close-site-nav">
+    		<span class="nav-trigger open left" id="close-nav-button">Menu</span>
+    		<div class="right nav-close-cross"></div>
+    	</div>
+      {% assign nav_pages = site.pages | where:"level","top" | sort: 'order' %}
+      <ul>
+      {% for nav_page in nav_pages %}
+        {% assign check = site.pages | where:"parent",nav_page.permalink | where:"url", page.url %}
+        {% if nav_page.title %}
+          {% assign subnav_pages = site.pages | where:"parent", nav_page.permalink | sort: 'order' %}
+          <li class="page-link {% if nav_page.url == page.url or check != empty %}active{% endif %} {% if subnav_pages != empty %}has-subnav{% endif %}"><a class="nav-page-text" href="{{ nav_page.url | prepend: site.data.general.baseurl }}">{{ nav_page.title }}</a>
+          {% if subnav_pages != empty %}
+          <a href="#" class="js-expand expand-button"><span class="visuallyhidden">Expand</span></a>
+          <ul class="subnav">
+          {% endif %}
+          {% for subpage in subnav_pages %}
+            <li class="subpage-link {% if subpage.url == page.url %}active{% endif %}"><a class="nav-page-text" href="{{ subpage.url | site.data.general.baseurl }}">{{subpage.title}}</a></li>
+          {% endfor %}
+          {% if subnav_pages != empty %}
+          </ul>
+          {% endif %}
+          </li>
+        {% endif %}
+      {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,60 @@
+.text-layout {
+  .founders-belt {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    @extend %clearfix;
+
+    .founder {
+      width: 100%;
+      box-sizing: border-box;
+      padding-bottom: 30px;
+      padding-top: 32px;
+      text-align: center;
+      color: #4a4949;
+      border-bottom: 1px solid white;
+      @include media-query($on-desktop) {
+        width: 33.3%;
+        float: left;
+        padding-right: 20px;
+        padding-top: 25px;
+        &:nth-child(3n-2)
+        {
+          padding-right: 6.6px;
+        }
+        &:nth-child(3n-1)
+        {
+          padding-right: 3.3px;
+          padding-left: 3.3px;
+        }
+        &:nth-child(3n)
+        {
+          padding-left: 6.6px;
+          padding-right: 0;
+        }
+      }
+
+      img {
+        border-radius: 50%;
+        margin-bottom: 15px;
+      }
+      span {
+        display: block;
+        line-height: 1.5em;
+      }
+      .founder-name {
+        color: #682c91;
+        font-weight: bold;
+      }
+      .founder-role {
+        margin-bottom: 18px;
+      }
+    }
+  }
+  #bottom-button-container {
+    text-align: center;
+    margin-bottom: 35px;
+    #bottom-button {
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body class="below-header product-layout">
+    {% include header.html %}
+    <div class="row">
+      <h1 class="page-title mobile-stretch"><span>{% if page.content-title %}{{page.content-title | escape }}{% else %}{{page.title | escape }}{% endif %}</span></h1>
+      <div id="wrapper" class="standard-text clearfix">
+        <div class="narrow-width">
+          {% if page.intro %}
+            <div class="intro">{{ page.intro | markdownify }}</div>
+          {% endif %}
+          {{content}}
+        </div>
+        {% if page.intro-image %}
+          <div class="product-intro-image-max-width">
+            <div class="product-image-container product-intro-image-container">
+              <div class="product-image-screen product-intro-image-screen"></div>
+              <img src="{{site.baseurl}}/{{page.intro-image.src}}" alt="{{page.intro-image.alt}}" class="product-image-upload product-intro-image-upload">
+            </div>
+          </div>
+        {% endif %}
+        {% for section in page.sections %}
+          <section class="product-section {{ section.type }}">
+            <div class="section-content {% if section.type == 'text' %}narrow-width{% endif %}">
+              <h2>{{ section.title }}</h2>
+              {{ section.content | markdownify }}
+            </div>
+            {%if section.image.src %}
+            <div class="section-image">
+              <div class="product-image-container">
+                <div class="product-image-screen"></div>
+                <img src="{{site.baseurl}}/{{section.image.src}}" alt="{{section.image.alt}}" class="product-image-upload">
+              </div>
+            </div>
+            {% endif %}
+          </section>
+        {% endfor %}
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

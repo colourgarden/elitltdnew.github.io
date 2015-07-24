@@ -1,0 +1,16 @@
+<footer class="site-footer row">
+  <div class="contact-details">
+    {{ site.data.copyright.declaration }}<br>
+    {{ site.data.company.name }}<br>
+    {{ site.data.company.contact }}<br>
+  </div>
+  <ul class="sitemap">
+    <li><a href="/working-with-us/">Join our Team</a></li>
+    <li><a href="/terms-of-use/">Terms &amp; Conditions</a></li>
+    <li><a href="/accessibility/">Accessibility</a></li>
+    <li><a href="/privacy/">Privacy</a></li>
+  </ul>
+  {% if site.data.general.footer_logo %}
+    <img src="{{site.data.general.footer_logo}}" alt="">
+  {% endif %}
+</footer>

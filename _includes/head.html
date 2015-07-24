@@ -1,0 +1,21 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if page.description %}
+  <meta name="description" content="{{page.description}}" />
+  {% else %}
+  <meta name="description" content="{{site.description}}" />
+  {% endif %}
+
+  <title>{{ page.title | escape }} {{ site.data.general.title.separator }} {{ site.data.general.title.suffix }}</title>
+
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="/js/jquery-1.11.3.min.js"></script>
+  <script src="/js/functions.js"></script>
+
+  <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.matchmedia.addListener.min.js"></script>
+  <![endif]-->
+</head>

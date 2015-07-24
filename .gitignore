@@ -1,1 +1,6 @@
 _site
+.hg
+.hgignore
+*.DS_Store
+.jekyll-metadata
+.sass-cache

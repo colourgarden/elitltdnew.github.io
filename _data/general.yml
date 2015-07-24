@@ -1,0 +1,10 @@
+# General settings
+name: English Language iTutoring
+description: English Language iTutoring
+logo: /images/logo.png
+footer_logo: /images/footer-logo.png
+
+# The title of each page
+title:
+  separator: "|"
+  suffix: ELiT
