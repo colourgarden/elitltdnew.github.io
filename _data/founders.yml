@@ -1,35 +1,21 @@
 # Founder information
-- name: "Founder Name"
-  role: "Director"
+- name: "Michael Milanovic"
+  role: "CEO"
   img:
-    src: "http://placehold.it/300x300"
-    alt: "Founder name"
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar."
+    src: "/images/founders/mike.jpg"
+    alt: "Michael Milanovic"
+  description: "Michael Milanovic has worked in English Language learning and assessment since 1977. He joined Cambridge English Language Assessment in 1989 as Director of Research and Evaluation. He became Deputy CEO in 1995 and CEO in 2003.<br/><br/>Michael now has a number of roles including Senior Advisor to the National Educational Examinations Authority (NEEA) in China, Visiting Professor with CRELLA, University of Bedfordshire, Trustee of the Bell Foundation, consultant with the Automated Language Teaching and Assessment Institute (ALTA) at the University of Cambridge, Board Director of Cambridge ClassServer and Advisor to the Malaysian Ministry of Education and CMEDT."
 
-- name: "Founder Name"
-  role: "Director"
+- name: "Ted Briscoe"
+  role: "Chief Scientist"
   img:
-    src: "http://placehold.it/300x300"
-    alt: "Founder name"
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar."
+    src: "/images/founders/ted.jpg"
+    alt: "Ted Briscoe"
+  description: "Ted Briscoe is Professor of Computational Linguistics at the University of Cambridge and the inaugural director of the Alta Institute, which conducts research into automated language teaching and assessment. He has published over 100 research articles and three books in the areas of automated speech and language processing. He is a senior editor of the journal Computer Speech and Language and co-founder and CEO of iLexIR Ltd., a consultancy and technology provider specialising in language processing applications. In 2009, iLexIR spun-out Swiftkey, maker of the world's most popular predictive keyboard for smartphones."
 
-- name: "Founder Name"
-  role: "Director"
+- name: "Paul Butcher"
+  role: "CTO"
   img:
-    src: "http://placehold.it/300x300"
-    alt: "Founder name"
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar."
-
-- name: "Founder Name"
-  role: "Director"
-  img:
-    src: "http://placehold.it/300x300"
-    alt: "Founder name"
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar."
-
-- name: "Founder Name"
-  role: "Director"
-  img:
-    src: "http://placehold.it/300x300"
-    alt: "Founder name"
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar."
+    src: "/images/founders/paul.jpg"
+    alt: "Paul Butcher"
+  description: "Paul is a veteran of several high-tech startups. Most recently he was Chief Software Architect of SwiftKey. As the first non-founder to join the company, he was responsible for developing the technology from proof-of-concept through to commercial success. The software has become the global best selling app on Android and is preinstalled on more than 200 million mobile devices worldwide.<br/><br/>Prior to SwiftKey, Paul was CTO of Texperts, a mobile question-answering service, and CTO of Smartner, a mobile e-mail technology provider.<br/><br/>Paul is also an author of software engineering textbooks, and regularly presents at international conferences on parallelism and concurrency."
