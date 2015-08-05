@@ -7,7 +7,7 @@ level: top
 # Hero image settings
 hero:
   image: /images/hero.jpg
-  alt: ELiT
+  alt: ELíT
   text: "__English Language iTutoring__  
   The new way to improve your written and spoken English"
 

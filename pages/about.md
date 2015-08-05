@@ -5,7 +5,7 @@ permalink: /about/
 level: top
 order: 1
 
-content-title: 'About ELiT'
+content-title: 'About ELíT'
 display-founders: true
 bottom-button:
   link: /join-us/
