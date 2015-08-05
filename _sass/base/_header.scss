@@ -13,6 +13,7 @@
   .site-header{
     @include media-query($on-desktop){
       border-bottom: 1px solid rgba(223, 218, 218, 0.3);
+      min-height: 74px;
     }
     ul{
       list-style: none;
