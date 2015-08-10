@@ -1,11 +1,14 @@
 ---
 layout: text
-title: ELiT
-permalink: /recruit/
-level: nested
----
-We are looking for a strong Rails and/or Clojure developer to join our small team.
+title: Developers
+permalink: /join-us/developers/
+level: second
+parent: /join-us/
+order: 1
 
+intro: >
+  We are looking for a strong Rails and/or Clojure developer to join our small team.
+---
 We are a young startup working to commercialise Natural Language Processing technology developed within the University of Cambridge to help non-native speakers learn to read, write, speak, and understand English. We are funded by Cambridge University Press English Language Teaching Division and Cambridge English Language Assessment.
 
 Ideally, we're looking for candidates with both Rails and Clojure experience, but would be willing to consider a Rails developer with an interest in learning Clojure, or a Clojure developer with an interest in learning Rails.
