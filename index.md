@@ -12,11 +12,9 @@ hero:
   Improve your English through practice and feedback"
 
 key-features: |
-  - Lorem ipsum dolor sit amet, consectetur.
-  - Aenean euismod bibendum laoreet.
-  - Proin gravida dolor sit amet lacus accumsan et.
-  - Proin sodales pulvinar tempor.
-  - Nam fermentum, nulla luctus pharetra vulputates
+  - Cutting edge Natural Language Processing technology from the University of Cambridge.
+  - Backed by Cambridge English Language Assessment.
+  - Available to integrate into your own products.
 key-features-link: "/about/"
 
 #our products data in _data/products.yml
