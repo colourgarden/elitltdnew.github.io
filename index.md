@@ -13,7 +13,7 @@ hero:
 
 key-features: |
   - Cutting edge Natural Language Processing technology from the University of Cambridge.
-  - Backed by Cambridge English Language Assessment.
+  - Calibrated against data from Cambridge English Language Assessment.
   - Available to integrate into your own products.
 key-features-link: "/about/"
 
