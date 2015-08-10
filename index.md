@@ -9,7 +9,7 @@ hero:
   image: /images/hero.jpg
   alt: ELíT
   text: "__English Language iTutoring__  
-  The new way to improve your written and spoken English"
+  Improve your English through practice and feedback"
 
 key-features: |
   - Lorem ipsum dolor sit amet, consectetur.
