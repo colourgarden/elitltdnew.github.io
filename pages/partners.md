@@ -4,20 +4,18 @@ title: Partners
 permalink: /partners/
 level: top
 order: 4
-
-intro: >
-  Partners Intro paragraph about EiLT Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+![Cambridge University Press](/images/partners/cup.png)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+![Cambridge English Language Assessment](/images/partners/cambridgeenglish.png)
 
->"Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor."
->
-><cite>__Name |__ Sound bite company</cite>
+Cambridge University Press and Cambridge English Language Assessment have invested in English Language I-Tutoring (ELiT), offering global expertise in English language learning & assessment. They provide ELiT with access to their corpus and research data from projects such as English Vocabulary and Grammar Profile. This research, as well as access to award winning course materials and online sites such as Cambridge Dictionaries Online, enhance the value of ELiT’s tools and technology for language learners. 
 
-## Our culture
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra [vulputate hyperlink style](#), felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+![ALTA Institute](/images/partners/alta-logo.png)
 
-Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+Something about ALTA institute here.
+
+## iLexIR??
+
+## CollegePre??
